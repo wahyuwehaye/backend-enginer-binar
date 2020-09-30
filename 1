@@ -1,1 +1,14 @@
-sample
+Desain Sistem Layanan Antar Makanan
+
+1. Database : digunakan untuk menampung dan mengolah data aplikasi
+2. Microservice : pengolahan data lewat aplikasi berdasarkan sub fungsi aplikasi, jadi setiap fungsi atau pemrosesan berdiri sendiri tanpa ketergantungan dengan service yang lainnya, jadi mempermudah untuk modifikasi data atau fitur yang akan dikembangkan selanjutnya, untuk management dan service discovery semuanya dilakukan di blok ini
+3. API Gateway : berfungsi untuk menghubungkan antara Database, Microservice dengan UI User, karena fungsinya sangat penting maka perlu adanya secure yang baik untuk API ini, data yang ditampilkan pada UI User diambil dari API ini sendiri dan feedback dari UI User nya sendiri akan dikirimkan melalui return callback dari API ini sendiri
+4. UI User / Client : fungsi utama dalam sebuah aplikasi karena berperan penting untuk User dapat mengerti dan memahami aplikasi, dan dapat melakukan feedback terhadap aplikasi serta callback yang didapat Client ketika menggunakan aplikasi
+
+Tools :
+1. React native
+2. Node JS
+3. MySql
+4. Docker
+
+tools diatas baik digunakan untuk penggunaan microservice karena ringan dalam developing
